@@ -5,7 +5,7 @@ title: "Peaking Too Early"
 detective: "Nora Nightingale"
 difficulty: 3
 topics: [Human performance, Talent, Probability]
-fallacies: [Confusion of the inverse, Conditional probability]
+fallacies: [Confusion of the inverse]
 summary: "A headline says childhood prodigies rarely become adult stars. The reverse claim it implies does not follow."
 ---
 
