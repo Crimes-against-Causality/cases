@@ -13,12 +13,14 @@ summary: "A viral chart claims rap and hip-hop musicians die at around 30. The t
 
 ## The crime scene
 
+![](death-by-beat-viz-1.png){.fluff-right}
 Recently, scientists announced a striking discovery: your choice of music genre may determine how long you live.
 
 Drawing on a large database of deceased popular musicians, the researchers compared the average age at death across musical genres. Blues, jazz, country, and gospel musicians, they reported, tend to live into their 60s and 70s—roughly in line with the general population. But newer genres tell a darker story. Rock musicians die younger. Punk and metal younger still. And at the far end of the spectrum lie rap and hip-hop, where the average age at death appears to plunge to around 30 years.
 
 The figure is dramatic. Lines slope downward as genres become more modern. Compared to life expectancy in the U.S. population, some genres appear almost more dangerous than war. The implication is hard to miss: certain musical cultures come with deadly lifestyles, and the music itself may be part of the problem.
 
+![](death-by-beat-viz-2.png){.fluff-left}
 The media picks it up immediately. Headlines warn aspiring artists. Parents clutch their children's playlists a little tighter. Somewhere, a jazz saxophonist nods smugly.
 
 But you are not convinced. At first glance, the story seems straightforward: genres shape behavior, behavior shapes risk, risk shapes mortality. But the pattern is too clean, too orderly. And every good detective knows that the most dangerous suspect is often the one missing from the lineup. Where is the fatal flaw?
@@ -27,13 +29,13 @@ But you are not convinced. At first glance, the story seems straightforward: gen
 
 *Average age at death of popular musicians by genre, compared to U.S. life expectancy*
 
-![Exhibit 1: Average age at death by music genre](death-by-beat-viz-1.png)
+![Exhibit 1: Average age at death by music genre](death-by-beat-chart.png)
 
 ## Exhibit 2: Map of suspects
 
 *Causal diagram underlying the study's implied argument*
 
-![Exhibit 2: Causal diagram](death-by-beat-viz-2.png)
+![Exhibit 2: Causal diagram](death-by-beat-dag.svg)
 
 ## The interrogation
 
