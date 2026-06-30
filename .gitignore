@@ -1,0 +1,13 @@
+# Auxiliary / potentially copyrighted source material — never commit here.
+# (Charts the book uses are committed as .png/.jpg; original papers are not.)
+*.pdf
+*.docx
+*.doc
+*.jpeg
+
+# R / macOS / Office
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+~$*
