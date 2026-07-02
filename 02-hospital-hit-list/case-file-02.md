@@ -3,6 +3,7 @@ number: 2
 slug: hospital-hit-list
 title: "The Hospital Hit List"
 detective: "Wilbert Wright"
+author: "Simon Munzert"
 difficulty: 3
 topics: [Public health, Hospital quality, Aggregation]
 fallacies: [Simpson's paradox, Confounding]

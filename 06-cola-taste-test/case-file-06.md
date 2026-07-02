@@ -3,6 +3,7 @@ number: 6
 slug: cola-taste-test
 title: "The Marked Glass"
 detective: "Wilbert Wright"
+author: "Simon Munzert"
 difficulty: 2
 topics: [Advertising, Experimental design, Measurement]
 fallacies: [Confounding]

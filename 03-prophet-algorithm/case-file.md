@@ -3,6 +3,7 @@ number: 3
 slug: prophet-algorithm
 title: "The Prophet Algorithm"
 detective: "Nora Nightingale"
+author: "Dylan Thurgood"
 difficulty: 2
 topics: [Machine learning, Public safety, AI governance]
 fallacies: [Base rate neglect, Accuracy paradox]

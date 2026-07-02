@@ -3,6 +3,7 @@ number: 1
 slug: deadly-music-genres
 title: "Death by Beats"
 detective: "Wilbert Wright"
+author: "Simon Munzert"
 difficulty: 2
 topics: [Public health, Data visualization, Survival analysis]
 fallacies: [Right censoring, Survivorship bias]

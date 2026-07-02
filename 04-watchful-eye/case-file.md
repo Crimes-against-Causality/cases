@@ -3,6 +3,7 @@ number: 4
 slug: watchful-eye
 title: "The Watchful Eye"
 detective: "Nora Nightingale"
+author: "Dylan Thurgood"
 difficulty: 3
 topics: [Machine learning, Surveillance, Algorithmic fairness]
 fallacies: [Base rate neglect, False positive paradox]

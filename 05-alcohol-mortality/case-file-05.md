@@ -3,6 +3,7 @@ number: 5
 slug: alcohol-mortality
 title: "A Glass a Day"
 detective: "Wilbert Wright"
+author: "Dylan Thurgood"
 difficulty: 2
 topics: [Public health, Nutrition, Epidemiology]
 fallacies: [Reference group bias, Confounding]

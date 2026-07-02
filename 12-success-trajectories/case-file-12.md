@@ -3,6 +3,7 @@ number: 12
 slug: success-trajectories
 title: "Peaking Too Early"
 detective: "Nora Nightingale"
+author: "Dylan Thurgood"
 difficulty: 3
 topics: [Human performance, Talent, Probability]
 fallacies: [Confusion of the inverse]
