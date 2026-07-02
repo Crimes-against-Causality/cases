@@ -39,27 +39,35 @@ Wilbert Wright, who would never prefer a glass of either Crown or Fizz over his 
 
 ## The interrogation
 
-1. How were the tasters recruited, and how could that have affected the result?
+1. **Yes or no?** Were the tasters a representative, random sample of cola drinkers?
 
-2. Do you think the sample size is in principle sufficient to settle the question? 
+2. **Yes or no?** During the test, did the tasters know which brand was in each glass?
 
-3. What—besides the cola—was true of the M glass but not the Q glass?
+3. **Yes or no?** Were the people tested all committed Crown drinkers?
 
-4. How would you have adapted the protocol to rule out rival explanations (next to taste) that could explain the preference gap?
+4. Do you think the sample size is in principle sufficient to settle the question?
 
-5. The advertisement claims people prefer the *taste* of Fizz. What can this study honestly support—and what can it not?
+5. What—besides the cola—was true of the M glass but not the Q glass?
+
+6. The advertisement claims people prefer the *taste* of Fizz. What can this study honestly support—and what can it not?
+
+7. How would you have adapted the protocol to rule out rival explanations (next to taste) that could explain the preference gap?
 
 ## Answers
 
-1. They were a *convenience sample*: whoever happened to pass that one arcade on that one Saturday and was willing to stop for a free taste, each vouching for their own Crown loyalty. Two things follow. First, the group stands for no clear population—not Crown drinkers across Ravenport, still less cola drinkers in general—so whatever they preferred need not hold for anyone else. Second, people who stop for a sidewalk taste test may differ systematically from those who walk on (more curious, more suggestible, more time on their hands), and we have only their word that they favour Crown. At best the result speaks for "people like these, here, that day"—not the market the advertisement invokes.
+1. **No.** They were a *convenience sample*—passers-by outside one arcade on a single Saturday, each vouching for their own Crown loyalty. Whatever they preferred need not hold for anyone else, and we have only their word that they favour Crown.
 
-2. "Enough" has no answer on its own—it depends on how large a difference you are trying to detect. Statisticians call a test's ability to detect a real difference its **power**, and power grows both with the sample size and with the size of the true effect: a razor-thin preference could stay hidden even among thousands of tasters, while a lopsided one reveals itself in a few hundred. If we assume for a moment that the detected difference in preferences in this case is the same in the population of interest, 200 tasters is comfortably powered. That is what the significance test behind the factsheet's claim actually computes. It asks a single "what if": *were the two glasses in truth equally preferred, how often would chance alone produce a split at least as lopsided as 124 to 76?* That probability—the *p-value*—comes out here at under one in a thousand, so a mere fluke of who happened to show up can be ruled out, and the preference is real. Yet power and significance speak only to whether an effect *exists*, never to what *caused* it.
+2. **No.** The glasses carried no brand names, only the letters "Q" and "M"—the tasting was blind, just as a fair comparison ought to be.
 
-3. Three things were true of the M glass, not one. It held Fizz—but it was also the glass marked "M," and the glass every taster drank *second*. A liking for the letter, or for whatever was sipped last, would produce a preference for the M glass just as surely as a liking for the cola would. Nothing in the study tells these explanations apart.
+3. **Yes.** All were self-identified Crown drinkers, which stacks the deck against Fizz: a defection among Crown's own loyalists is what makes the headline sting.
 
-4. Break apart the things that travelled together. Assign the letters at random—so Fizz is the "Q" glass for half the tasters and "M" for the rest—and likewise vary which glass is tasted first; then only the cola still lines up with the brand, and a preference gap could finally be read as a taste gap. Simpler still is a control condition: pour the *same* cola into both glasses. If people still crowd toward "M" (or toward the second glass), the pull was never the drink. That is precisely the test Crown ran in reply—and "M" won again.
+4. "Enough" has no answer on its own—it depends on how large a difference you are trying to detect. Statisticians call a test's ability to detect a real difference its **power**, and power grows both with the sample size and with the size of the true effect: a razor-thin preference could stay hidden even among thousands of tasters, while a lopsided one reveals itself in a few hundred. If we assume for a moment that the detected difference in preferences in this case is the same in the population of interest, 200 tasters is comfortably powered. That is what the significance test behind the factsheet's claim actually computes. It asks a single "what if": *were the two glasses in truth equally preferred, how often would chance alone produce a split at least as lopsided as 124 to 76?* That probability—the *p-value*—comes out here at under one in a thousand, so a mere fluke of who happened to show up can be ruled out, and the preference is real. Yet power and significance speak only to whether an effect *exists*, never to what *caused* it.
 
-5. Honestly, very little that is of interest. The study can fairly say that this particular group, on that afternoon, chose the M glass more often than the Q glass. It cannot say *why*—because the cola was inseparable from the letter on its glass and its place in the tasting order. The one claim the design cannot support is the very one in the headline: that people prefer how Fizz *tastes*.
+5. Three things were true of the M glass, not one. It held Fizz—but it was also the glass marked "M," and the glass every taster drank *second*. A liking for the letter, or for whatever was sipped last, would produce a preference for the M glass just as surely as a liking for the cola would. Nothing in the study tells these explanations apart.
+
+6. Honestly, very little that is of interest. The study can fairly say that this particular group, on that afternoon, chose the M glass more often than the Q glass. It cannot say *why*—because the cola was inseparable from the letter on its glass and its place in the tasting order. The one claim the design cannot support is the very one in the headline: that people prefer how Fizz *tastes*.
+
+7. Our suggestion would be to break apart the things that travelled together. Assign the letters at random—so Fizz is the "Q" glass for half the tasters and "M" for the rest—and likewise vary which glass is tasted first; then only the cola still lines up with the brand, and a preference gap could finally be read as a taste gap. Simpler still is a control condition: pour the *same* cola into both glasses. If people still crowd toward "M" (or toward the second glass), the pull was never the drink. That is precisely the test Crown ran in reply—and "M" won again.
 
 ## What went wrong
 

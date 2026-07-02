@@ -75,6 +75,14 @@ entirely convincing.
 whether something else could cause *both* X and Y. If the groups being compared
 differ in ways other than X, the difference in Y may have nothing to do with X.
 
+## Sampling bias
+
+**The con:** Gathering your data in a way that quietly settles the answer before any analysis begins.
+
+A finding is only ever as trustworthy as the data beneath it, and data never simply appears—someone decides what to collect, from where, and how. When that decision leaves the sample unrepresentative of the thing you actually care about, the bias is sealed in at the source, and no amount of clever analysis downstream will lift it back out. The trap is most seductive when two groups are gathered from two different places: any difference between the places—who was photographed, when, under what rules—now travels in perfect lockstep with the group label and masquerades as a difference between the groups themselves. A study, or a machine-learning model, then "discovers" a pattern that lives entirely in the collecting, not in the world.
+
+**How to catch it:** Ask where each number actually came from, and whether the things being compared were gathered the same way. If two groups were drawn from different sources, assume those sources differ in ways that have nothing to do with your question—until someone proves otherwise.
+
 ## Base rate neglect
 
 **The con:** Fixating on a test's accuracy while ignoring how rare the thing it detects actually is.

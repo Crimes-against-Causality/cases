@@ -25,6 +25,7 @@ number: 7
 slug: my-new-case
 title: "My New Case"
 detective: "Nora Nightingale"   # Wilbert Wright | Nora Nightingale
+author: "Simon Munzert"         # who wrote it — colour-codes this case's title in the sidebar/ToC
 difficulty: 2                   # 1 = Easy, 2 = Medium, 3 = Hard
 topics: [Machine learning, Public health]
 fallacies: [Base rate neglect]
@@ -52,8 +53,14 @@ Local images are copied into the site and de-duplicated by case number; remote
 the original published charts** — `*.pdf`, `*.docx`, and `*.jpeg` are
 git-ignored for that reason.
 
+Every fallacy you list under `fallacies:` should have a matching `## <name>`
+entry in [`fallacies.md`](fallacies.md), the "Rogues' Gallery." Using a new
+fallacy? Add its entry there too, and the build gives it a gallery page and
+cross-links it to the case automatically.
+
 ## Publishing
 
-Every push to `main` triggers a rebuild and redeploy of the website (via the
-`Trigger site rebuild` workflow, which signals the site repository). No manual
-step is needed.
+Pushes to `main` reach the live site on their own: the website repository
+rebuilds on a schedule (roughly every half hour) and pulls in the latest
+content. To publish immediately rather than wait, run the **Publish book**
+workflow in the [site repository](https://github.com/crimes-against-causality/crimes-against-causality.github.io/actions).
