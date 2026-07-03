@@ -75,6 +75,14 @@ entirely convincing.
 whether something else could cause *both* X and Y. If the groups being compared
 differ in ways other than X, the difference in Y may have nothing to do with X.
 
+## Sampling bias
+
+**The con:** Gathering your data in a way that quietly settles the answer before any analysis begins.
+
+A finding is only ever as trustworthy as the data beneath it, and data never simply appears—someone decides what to collect, from where, and how. When that decision leaves the sample unrepresentative of the thing you actually care about, the bias is sealed in at the source, and no amount of clever analysis downstream will lift it back out. The trap is most seductive when two groups are gathered from two different places: any difference between the places—who was photographed, when, under what rules—now travels in perfect lockstep with the group label and masquerades as a difference between the groups themselves. A study, or a machine-learning model, then "discovers" a pattern that lives entirely in the collecting, not in the world.
+
+**How to catch it:** Ask where each number actually came from, and whether the things being compared were gathered the same way. If two groups were drawn from different sources, assume those sources differ in ways that have nothing to do with your question—until someone proves otherwise.
+
 ## Base rate neglect
 
 **The con:** Fixating on a test's accuracy while ignoring how rare the thing it detects actually is.
@@ -154,3 +162,35 @@ entirely on how many late bloomers there are.
 **How to catch it:** Whenever you read "X% of A are B," ask whether the argument
 secretly assumes the reverse—and remember that the answer depends on the totals
 on each side.
+
+## Regression to the mean
+
+**The con:** Mistaking the natural settling-down of an extreme group for the effect of whatever you did to them.
+
+Pick out the people—or teams, patients, schools, drivers—who did unusually badly last time, do *something* to them, and measure again: they will almost always look better, whether or not your something worked. An extreme measurement is part real and part luck, and luck does not repeat. The sickest patients, the lowest-scoring students, the accident-blackspot junctions were partly just having a bad spell, and next time the bad luck averages out. Regression to the mean manufactures improvement from the bottom (and decline from the top) with no cause at all—and it is forever sold as the triumph of a treatment, a training course, or a new speed camera.
+
+**How to catch it:** Ask whether the group was chosen for being extreme, and whether there is a comparison group that was equally extreme but left alone. Without one, expect a chunk of any "improvement" for free.
+
+## Proxy bias
+
+**The con:** Optimising a convenient stand-in for the thing you actually care about—and inheriting every bias baked into the stand-in.
+
+The outcome you truly want is often hard to measure, so you reach for a proxy: past hiring decisions instead of "who is good at the job," arrests instead of crime, clicks instead of worth. But the proxy carries its own history. Train a model to reproduce past decisions and it reproduces the prejudices in them—faithfully and at scale—while looking neutral, because the sensitive detail was never fed in directly. The bias simply re-enters through whatever the proxy is correlated with. You end up with a system that is superb at predicting the proxy and quietly wrong about the goal.
+
+**How to catch it:** Separate the thing being predicted from the thing you care about, and ask how they differ. If the target was produced by a process you would not trust—biased humans, over-policed streets, a skewed past—assume the model has learned that process, not the truth.
+
+## Small samples
+
+**The con:** Reading a real effect into a result that a handful of cases—sometimes a single one—could have thrown up by luck alone.
+
+The smaller the sample, the more room chance has to fool you. With enough cases the flukes cancel out and a genuine pattern shows through; with only a few, one oddball can *be* the result. It is why even the sacred safeguard of randomisation quietly fails on tiny groups: flipping a coin to split two plants, or two patients, or two schools, equalises the groups on nothing—it merely assigns the treatment. This is not a rule that "few is always worthless"—a couple of cases watched closely over a long stretch, with a sharp change at the moment something is done to them, can be quite telling. It is a warning that when the evidence is thin, "the treatment worked" and "that one was always going to be different" are hard to tell apart.
+
+**How to catch it:** Ask how much the claim really rests on—how many independent cases, and how much you actually saw of each. A single before-and-after on one unit is a story; the same unit tracked closely through the change, or many units compared, is where confidence should start.
+
+## Observer expectancy
+
+**The con:** Letting the person who runs the study—hoping for a particular result—quietly shape it into being.
+
+When whoever measures, tends, or judges knows which subjects are "supposed" to respond, that knowledge leaks—not usually through fraud, but through a thousand small, unconscious nudges: the treated plant watered a little less, the promising patient examined more hopefully, the borderline case rounded the convenient way, the improvement noticed a beat sooner. Expectation is a real cause, and when it lines up with the treatment it becomes indistinguishable from it. This is why serious experiments are run *blind*: the people handling and assessing the subjects are kept from knowing who got what, so the outcome cannot be bent—however honestly—toward the answer everyone is hoping for.
+
+**How to catch it:** Ask who knew which subjects were being treated while the study ran, and whether that knowledge could have touched how the subjects were handled or how the results were recorded. If the hopeful experimenter also did the measuring, expect a thumb on the scale—even an innocent one.
