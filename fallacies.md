@@ -50,8 +50,8 @@ A hospital can have a lower survival rate than its rival *overall*, yet a higher
 survival rate for *every single condition* it treats. How? If it takes on far
 more of the hardest cases, its combined numbers are weighed down even though it
 does better patient-for-patient. The reversal appears whenever a lurking third
-variable—here, the mix of easy and hard cases—is spread unevenly across the
-groups. Aggregated and broken-out data can literally point in opposite
+variable—a [confounder](confounding.qmd)—here, the mix of easy and hard
+cases—is spread unevenly across the groups. Aggregated and broken-out data can literally point in opposite
 directions, and the trustworthy answer is the one whose comparison actually
 matches the question you care about.
 
@@ -93,7 +93,10 @@ for every true case the test catches, it also flags a scattering of healthy
 people, and there are vastly more healthy people to begin with. The "base
 rate"—how common the condition is—is decisive, yet intuition fixates on the
 test's accuracy and forgets it. When the target is rare, even an excellent test
-produces mostly false alarms.
+produces mostly false alarms. At heart this is [confusion of the
+inverse](confusion-of-the-inverse.qmd)—mistaking the test's accuracy for the
+chance of actually being sick—and it recurs, dressed differently, in the
+[false positive paradox](false-positive-paradox.qmd).
 
 **How to catch it:** Before trusting a positive result, ask how common the
 condition is in the first place. Turn percentages into head-counts: out of 1,000,
@@ -109,7 +112,9 @@ completely useless, because it never catches a single violation. The accuracy
 paradox is that when one outcome is rare, "percent correct" is dominated by the
 easy majority and says almost nothing about performance on the cases you actually
 care about. A glowing accuracy figure can hide a system that is wrong nearly
-every time it raises a flag.
+every time it raises a flag. It is a close cousin of [base rate
+neglect](base-rate-neglect.qmd): both let a rare outcome hide behind a
+reassuring headline number.
 
 **How to catch it:** Ignore overall accuracy for rare events. Ask instead: of the
 cases it flagged, how many were real? Of the real cases, how many did it catch?
@@ -123,7 +128,9 @@ crowd where only 1 in 100,000 people is on a watchlist, and the few real matches
 are buried under a flood of false ones—because even 0.1% of a very large crowd is
 a lot of people. This is the false positive paradox: *rarity*, not poor
 technology, is what makes the alarms untrustworthy. No amount of marketing about
-accuracy changes the arithmetic of who actually gets stopped.
+accuracy changes the arithmetic of who actually gets stopped. It is the same
+arithmetic as [base rate neglect](base-rate-neglect.qmd), just run at the scale
+of a crowd instead of a single test.
 
 **How to catch it:** Multiply it out. Take the real numbers—how many people, how
 rare the target, what the error rate is—and count the true and false alarms
@@ -140,7 +147,9 @@ but also ex-drinkers who had quit *because they were already sick*. Next to that
 unhealthy baseline, almost anyone looks healthy. Reference group bias is when the
 comparison group is contaminated or ill-chosen, so the contrast measures
 something other than what it claims, and the "effect" you find is really an
-artifact of whom you chose to compare against.
+artifact of whom you chose to compare against. It is
+[confounding](confounding.qmd) smuggled in through the comparison group itself,
+rather than through some separate third variable.
 
 **How to catch it:** Interrogate the baseline. Ask exactly who is in the
 comparison group, and whether they differ from the treatment group in ways that
@@ -167,7 +176,7 @@ on each side.
 
 **The con:** Mistaking the natural settling-down of an extreme group for the effect of whatever you did to them.
 
-Pick out the people—or teams, patients, schools, drivers—who did unusually badly last time, do *something* to them, and measure again: they will almost always look better, whether or not your something worked. An extreme measurement is part real and part luck, and luck does not repeat. The sickest patients, the lowest-scoring students, the accident-blackspot junctions were partly just having a bad spell, and next time the bad luck averages out. Regression to the mean manufactures improvement from the bottom (and decline from the top) with no cause at all—and it is forever sold as the triumph of a treatment, a training course, or a new speed camera.
+Pick out the people—or teams, patients, schools, drivers—who did unusually badly last time, do *something* to them, and measure again: they will almost always look better, whether or not your something worked. An extreme measurement is part real and part luck, and luck does not repeat. The sickest patients, the lowest-scoring students, the accident-blackspot junctions were partly just having a bad spell, and next time the bad luck averages out. Regression to the mean manufactures improvement from the bottom (and decline from the top) with no cause at all—and it is forever sold as the triumph of a treatment, a training course, or a new speed camera. It is easy to confuse with [small samples](small-samples.qmd) noise, but the two are different: a group can be huge and still regress to the mean, so long as it was chosen for being extreme in the first place.
 
 **How to catch it:** Ask whether the group was chosen for being extreme, and whether there is a comparison group that was equally extreme but left alone. Without one, expect a chunk of any "improvement" for free.
 
@@ -175,7 +184,7 @@ Pick out the people—or teams, patients, schools, drivers—who did unusually b
 
 **The con:** Optimising a convenient stand-in for the thing you actually care about—and inheriting every bias baked into the stand-in.
 
-The outcome you truly want is often hard to measure, so you reach for a proxy: past hiring decisions instead of "who is good at the job," arrests instead of crime, clicks instead of worth. But the proxy carries its own history. Train a model to reproduce past decisions and it reproduces the prejudices in them—faithfully and at scale—while looking neutral, because the sensitive detail was never fed in directly. The bias simply re-enters through whatever the proxy is correlated with. You end up with a system that is superb at predicting the proxy and quietly wrong about the goal.
+The outcome you truly want is often hard to measure, so you reach for a proxy: past hiring decisions instead of "who is good at the job," arrests instead of crime, clicks instead of worth. But the proxy carries its own history. Train a model to reproduce past decisions and it reproduces the prejudices in them—faithfully and at scale—while looking neutral, because the sensitive detail was never fed in directly. The bias simply re-enters through whatever the proxy is correlated with—in effect, the proxy becomes a [confounder](confounding.qmd) hiding in plain sight. You end up with a system that is superb at predicting the proxy and quietly wrong about the goal.
 
 **How to catch it:** Separate the thing being predicted from the thing you care about, and ask how they differ. If the target was produced by a process you would not trust—biased humans, over-policed streets, a skewed past—assume the model has learned that process, not the truth.
 
@@ -183,7 +192,7 @@ The outcome you truly want is often hard to measure, so you reach for a proxy: p
 
 **The con:** Reading a real effect into a result that a handful of cases—sometimes a single one—could have thrown up by luck alone.
 
-The smaller the sample, the more room chance has to fool you. With enough cases the flukes cancel out and a genuine pattern shows through; with only a few, one oddball can *be* the result. It is why even the sacred safeguard of randomisation quietly fails on tiny groups: flipping a coin to split two plants, or two patients, or two schools, equalises the groups on nothing—it merely assigns the treatment. This is not a rule that "few is always worthless"—a couple of cases watched closely over a long stretch, with a sharp change at the moment something is done to them, can be quite telling. It is a warning that when the evidence is thin, "the treatment worked" and "that one was always going to be different" are hard to tell apart.
+The smaller the sample, the more room chance has to fool you. With enough cases the flukes cancel out and a genuine pattern shows through; with only a few, one oddball can *be* the result. It is why even the sacred safeguard of randomisation quietly fails on tiny groups: flipping a coin to split two plants, or two patients, or two schools, equalises the groups on nothing—it merely assigns the treatment, and if whoever tends and judges them afterward knows which is which, [observer expectancy](observer-expectancy.qmd) creeps in as well. This is not a rule that "few is always worthless"—a couple of cases watched closely over a long stretch, with a sharp change at the moment something is done to them, can be quite telling. It is a warning that when the evidence is thin, "the treatment worked" and "that one was always going to be different" are hard to tell apart.
 
 **How to catch it:** Ask how much the claim really rests on—how many independent cases, and how much you actually saw of each. A single before-and-after on one unit is a story; the same unit tracked closely through the change, or many units compared, is where confidence should start.
 
@@ -191,6 +200,6 @@ The smaller the sample, the more room chance has to fool you. With enough cases 
 
 **The con:** Letting the person who runs the study—hoping for a particular result—quietly shape it into being.
 
-When whoever measures, tends, or judges knows which subjects are "supposed" to respond, that knowledge leaks—not usually through fraud, but through a thousand small, unconscious nudges: the treated plant watered a little less, the promising patient examined more hopefully, the borderline case rounded the convenient way, the improvement noticed a beat sooner. Expectation is a real cause, and when it lines up with the treatment it becomes indistinguishable from it. This is why serious experiments are run *blind*: the people handling and assessing the subjects are kept from knowing who got what, so the outcome cannot be bent—however honestly—toward the answer everyone is hoping for.
+When whoever measures, tends, or judges knows which subjects are "supposed" to respond, that knowledge leaks—not usually through fraud, but through a thousand small, unconscious nudges: the treated plant watered a little less, the promising patient examined more hopefully, the borderline case rounded the convenient way, the improvement noticed a beat sooner. Expectation is a real cause, and when it lines up with the treatment it becomes indistinguishable from it—an effect sharpest of all in [small samples](small-samples.qmd), where there is no averaging-out to dilute one experimenter's thumb on the scale. This is why serious experiments are run *blind*: the people handling and assessing the subjects are kept from knowing who got what, so the outcome cannot be bent—however honestly—toward the answer everyone is hoping for.
 
 **How to catch it:** Ask who knew which subjects were being treated while the study ran, and whether that knowledge could have touched how the subjects were handled or how the results were recorded. If the hopeful experimenter also did the measuring, expect a thumb on the scale—even an innocent one.
