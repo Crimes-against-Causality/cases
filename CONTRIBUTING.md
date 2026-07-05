@@ -183,10 +183,10 @@ Use `## Exhibit N: Description` in the case file. The build script converts thes
 To link to the Rogues' Gallery:
 
 ```markdown
-[Simpson's paradox](../compendium/simpsons-paradox.qmd)
+[Simpson's paradox](../compendium/simpson-s-paradox.qmd)
 ```
 
-The fallacy slug is the lowercase, hyphenated version of the heading from `cases/fallacies.md`.
+The fallacy slug is the lowercase, hyphenated version of the heading from `cases/fallacies.md` — every run of non-alphanumeric characters (including apostrophes) becomes a single hyphen, so "Simpson's paradox" slugs to `simpson-s-paradox`, not `simpsons-paradox`.
 
 ---
 
