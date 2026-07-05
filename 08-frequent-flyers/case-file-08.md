@@ -6,7 +6,7 @@ detective: "Wilbert Wright"
 author: "Dylan Thurgood"
 difficulty: 2
 topics: [Public health, Policy evaluation, Causal inference]
-fallacies: [Regression to the mean]
+fallacies: [Missing control group, Regression to the mean]
 summary: "A care programme cuts hospital visits by 40% among the heaviest users. A breakthrough—or just what happens after an unusually bad spell?"
 ---
 
