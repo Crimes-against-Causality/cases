@@ -39,7 +39,7 @@ Note: A greater hazard ratio means dying from cardiovascular disease is relative
 
 ## <span style="font-size: 0.9em;">The interrogation 
 
-1. According to Exhibit 1, for which amount of alcohol does mortality risk appear lowest?
+1. According to Exhibit 1, for which amount of alcohol consumption does mortality risk appear lowest?
 
 2. Do women or men have a greater relative mortality risk at the same level of alcohol intake? 
 
@@ -63,11 +63,11 @@ Note: A greater hazard ratio means dying from cardiovascular disease is relative
 
 ## <span style="font-size: 0.9em;">Answers
 
-1. One alcoholic drink per day (if considering only full units) or a third of a drink is associated with the lowest estimated relative mortality risk from all causes. At this intake, the mortality risk for men is approximately 17% and for women 13% lower.
+1. One unit of alcohol per day is associated with the lowest estimated relative mortality risk from all causes. At this intake, the mortality risk for men is approximately 16% and for women 14% lower.
 
 2. Women have a greater relative mortality risk than men at all alcohol intake levels, suggesting that to have the same relative mortality risk, women would need to drink less alcohol than men. 
 
-3. For women, three or more drinks a day are associated with a greater relative mortality risk, while for men this is five or more drinks a day.
+3. For both women and men four units of alcohol a day are associated with a greater relative mortality risk compared to people consuming no alcohol.
 
 4. The data at hand is based on self-reported alcohol intake as indicated in a survey.
 
@@ -86,11 +86,20 @@ Note: A greater hazard ratio means dying from cardiovascular disease is relative
 
 ## <span style="font-size: 0.9em;">What went wrong
 
-The reference group was erroneously constructed. To have a cleaner comparison, the reference group should only include respondents for whom abstention has been a consistent life choice rather than those who stopped drinking, for medical or other reasons, as this could impact their mortality risk.<br><br>
+The reference group was not appropriately constructed. People who report no alcohol consumption may include both lifelong abstainers and former drinkers. Some former drinkers may have stopped because of illness, medication use, or other health problems. Their mortality risk may therefore already be higher for reasons unrelated to abstaining from alcohol. This can make moderate drinkers appear healthier by comparison, an issue often referred to as the "sick quitter" effect.
+
+A better comparison would separate former drinkers from lifelong abstainers and use the latter as the reference group. The example also shows why associations found in observational data need to be interpreted carefully. A lower mortality risk among moderate drinkers does not necessarily mean that drinking alcohol caused the lower risk.<br><br>
 
 ## <span style="font-size: 0.9em;">Background
 
-The case demonstrates an evidence-based shift in health guidelines over the past decades. While in the early 1990s moderate alcohol consumption (20-30g per day) was believed to have protective effects as regards coronary heart disease risk (Renaud and de Lorgeril, 1992), recent evidence suggests that even minimal or light alcohol consumption can have negative health effects (Biddinger et al., 2022; Zhao et al., 2023). As a result, the World Health Organization now highlights that there is no safe level of alcohol intake.<br><br>
+The case reflects how the evidence on alcohol consumption and health has changed over the past decades. In the early 1990s, moderate alcohol consumption (20–30 g per day) was thought to have a protective effect against coronary heart disease (Renaud and de Lorgeril, 1992). Several observational studies appeared to support this idea, often showing lower mortality among moderate drinkers than among both heavy drinkers and non-drinkers.
+
+There are, however, problems with interpreting this pattern as a protective effect of alcohol. People who drink moderately may differ from non-drinkers in other ways that affect their health, such as smoking, diet, socioeconomic status, or existing illness. Alcohol consumption is also usually self-reported and may change over time. The composition of the non-drinking reference group is another important issue, particularly when former drinkers are grouped together with lifelong abstainers.
+
+More recent studies have questioned whether the apparent benefits of light or moderate drinking remain once some of these problems are taken into account (Biddinger et al., 2022; Zhao et al., 2023). Current public health guidance has therefore moved away from the idea that moderate alcohol consumption is beneficial. The World Health Organization states that there is no level of alcohol consumption that is without health risk.
+
+More broadly, the case shows how choices made when defining comparison groups can affect the results of an observational study, and why an observed association should not automatically be interpreted as a causal effect.<br><br>
+
 
 ## <span style="font-size: 0.9em;">Sources
 

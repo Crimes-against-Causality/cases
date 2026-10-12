@@ -12,7 +12,7 @@ df <- data.frame(
     # Men
     1.00, 0.84, 0.88, 0.96, 1.05, 1.15, 1.28,
     # Women
-    1.00, 0.84, 0.89, 0.98, 1.10, 1.25, 1.45
+    1.00, 0.86, 0.89, 0.98, 1.10, 1.25, 1.45
   ),
   sex = factor(
     rep(c("Men", "Women"), each = 7),
@@ -31,6 +31,7 @@ p <- ggplot(
     linetype = "dashed",
     linewidth = 0.5
   ) +
+  coord_cartesian(ylim = c(0.8, 1.4)) +
   labs(
     x = "Units of alcohol consumption",
     y = "Relative mortality risk",
