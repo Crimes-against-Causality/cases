@@ -6,7 +6,7 @@ detective: "Wilbert Wright"
 author: "Dylan Thurgood"        
 difficulty: 1                  
 topics: [Lifetime trajectories]
-fallacies: [Conditional probabilities]
+fallacies: [Conditional probabilities, base rate neglect, causality]
 summary: "Early talent or reaping rewards later in life with hard work? Don't be fooled by conditional probabilities."
 ---
 
@@ -48,35 +48,48 @@ Is peaking too early a hindrance to later career success?<br><br>
 ## <br><br>
 ## The interrogation
 
-1. For a childhood prodigy, what is the likelihood of reaching elite performance status in adulthood according to Exhibit 1? 
+1. True or False: Based on Exhibit 1, 10% of the childhood stars in the sample went on to achieve elite status in adulthood.
 
-2. Based on Exhibit 2, is the likelihood of reaching stardom in adulthood if you were a star in childhood the same irrespective of domain?
+2. Only 10% of childhood stars becoming adulthood stars suggests that being a childhood star reduces the probability of becoming an adulthood star.
 
-3. What is the likelihood that a star in adulthood was already a star in their childhood?
+3. The finding that most childhood stars did not become adulthood stars implies that most adulthood stars were not childhood stars.
 
-4. What needs to be true for Clarion's headline and deck to be consistent with the data?
+4. A 10% probability of reaching elite status in adulthood among childhood stars could still indicate that childhood stardom is a strong predictor of adult success.
 
-5. Under the assumption that the headline is defensible given the evidence, is the relationship between childhood success and adulthood success causal?<br><br>
+5. True or False: Exhibit 2 provides sufficient evidence to conclude that childhood stardom predicts adult stardom differently across piano, tennis, and academic performance.
 
+6. True or False: Even if childhood stars were less likely than other children to achieve elite status in adulthood, these data alone would show that early success causes poorer outcomes later in life.
 
 
 
 ## Answers
 
-1. This conditional probability is 50/500 = 10%. 1 in 10 childhood prodigies go on to become stars in adulthood!
+1. True. Exhibit 1 shows that 50 of the 500 childhood stars achieved elite status in adulthood: 50/500 = 10%.
 
-2. We do not have enough information to answer this question, as this would require knowing the total number of childhood stars by domain. 
+2. False. We cannot conclude that childhood stardom reduces the probability of adult stardom without knowing the corresponding probability among children who were not childhood stars.
 
-3. This questions asks for the reverse conditional probability, which requires knowing the total number of stars in adulthood, as it is computed as the number of adulthood stars who were already stars in childhood divided by the total number of adulthood stars.
+3. False. These are different conditional probabilities. Knowing that most childhood stars did not become adulthood stars tells us P(adult star | child star), but not P(child star | adult star).
 
-4. Both the conditional probability of being an adulthood star given you were a childhood star and the conditional probability of having been a childhood star given you are an adulthood star must be low. 
+4. True. Whether 10% represents a low or high probability depends on the base rate. For example, if only 1% of non-childhood stars become adulthood stars, then childhood stars would be substantially more likely to achieve elite status later.
 
-5. No. Even if the headline is consistent with the data, this would still only show a correlation rather than prove a causal relationship, as the findings could also reflect regression to the mean, selection effects, or other confounding variables.<br><br>
+5. False. Exhibit 2 gives the number of childhood stars who reached elite status in each domain, but not the total number of childhood stars in each domain. Without these denominators, we cannot compare the probabilities.
+
+6. False. Even if childhood stars were found to have a lower probability of later elite performance, this observational association alone would not establish that early success causes poorer adult outcomes, as other factors could explain the relationship.
 
 
 ## What went wrong
 
-The Evening Clarion confused different conditional probabilities, i.e. it assumed that not only the probability of a childhood star becoming a star in adulthood but also the probability that an adulthood star was already a childhood star are similarly low. The latter probability however depends on how many adulthood stars there were in total, i.e. adulthood stars who were also childhood stars plus adulthood stars who were not childhood stars. For instance, if there were only 25 adulthood stars who were not childhood stars, this would imply 50 + 25 = 75 adulthood stars in total, a probability of an adulthood star having already been a star in childhood of 50/75 = 66.67%. In other words, in this case 2 out of 3 adulthood stars would have been stars in childhood already in contrast to the reporting of the Clarion. If the number of adulthood stars who were not childhood stars were 1,000 on the other hand, this probability would drop to 50/1,050 = 4.76%, suggesting that an adulthood star having also been a star in childhood would be the exception rather than the norm, which is closer to the Clarion headline.<br><br> 
+The Evening Clarion confused two different conditional probabilities. The study tells us the probability that someone becomes a star in adulthood given that they were a star in childhood (10%). Clarion, however, goes a step further and suggests that most adulthood stars were not childhood stars. This concerns the probability that someone was a childhood star given that they are an adulthood sta. Reversing the condition in this way changes the question, and the two probabilities do not have to be the same.
+
+The reason is that the denominator changes. For the first probability, the denominator is all childhood stars, which we know to be 500. For the second probability, the denominator needs to be all adulthood stars. This includes adulthood stars who were childhood stars as well as adulthood stars who were not childhood stars. While we know that 50 people belong to the first group, the data do not tell us how large the second group is.
+
+For instance, if there were only 25 adulthood stars who were not childhood stars, there would be 50 + 25 = 75 adulthood stars in total. The probability that an adulthood star had already been a star in childhood would therefore be 50/75 = 66.67%. In other words, two out of three adulthood stars would have already been stars in childhood, in contrast to the reporting of the Clarion. If there were 1,000 adulthood stars who had not been childhood stars, on the other hand, the probability would drop to 50/1,050 = 4.76%. In this case, an adulthood star having also been a childhood star would indeed be the exception rather than the norm. Importantly, both scenarios are consistent with the information in Exhibit 1. We simply do not have the denominator needed to decide which one is closer to reality.
+
+A related issue is the base rate fallacy. Knowing that only 10% of childhood stars became adulthood stars may sound like evidence that childhood stardom is a poor predictor of later success. But this percentage means little without knowing how frequently adulthood stardom occurs among children who were not stars. Suppose only 1% of non-star children became adulthood stars. A 10% probability among childhood stars would then mean that childhood stars were ten times as likely to reach elite status in adulthood. If, instead, 20% of non-star children became adulthood stars, the same 10% figure would point in the opposite direction. A probability therefore needs to be interpreted relative to an appropriate comparison group.
+
+There is a further problem if the Clarion wants to argue that being a childhood prodigy is actually a hindrance to later success. Even if complete data showed that childhood stars were less likely than other children to become adulthood stars, this would establish an association, not necessarily a causal relationship. Childhood stars and other children may differ in many ways, and the data presented here do not show that early success itself causes poorer outcomes later in life. The Clarion's speculation that intensive training leaves children with too little freedom to discover other talents would require additional evidence.
+
+The main problem is therefore not the finding that 450 of the 500 childhood stars did not become adulthood stars. That statement follows directly from the data. The problem is what the Clarion infers from it. "Most childhood stars do not become adulthood stars", "most adulthood stars were not childhood stars", and "being a childhood star makes later success less likely" are three different claims. Exhibit 1 only allows us to establish the first.<br><br>
 
 
 ## Background
