@@ -1,14 +1,15 @@
 ---
 number: 5
 slug: alcohol-mortality
-title: "A Glass a Day"
-detective: "Wilbert Wright"
-author: "Dylan Thurgood"
-difficulty: 2
-topics: [Public health, Nutrition, Epidemiology]
-fallacies: [Reference group bias, Confounding]
-summary: "A survey suggests moderate drinking lowers mortality. The catch is hiding in who counts as a non-drinker."
+title: "A glass a day keeps the doctor away"
+detective: "Wilbert Wright"   
+author: "Dylan Thurgood"         
+difficulty: 2                   
+topics: [Health]
+fallacies: [Composition of reference group, correlation-causation]
+summary: "Your glass of wine actually has health benefits - or rather tells you you weren't among the sickest to begin with."
 ---
+
 
 # A glass a day keeps the doctor away<br><br>
 
@@ -26,12 +27,12 @@ Wilbert Wright has quickly come to the conclusion that the analysis is flawed an
 
 ### <span style="font-size: 0.9em;">**Exhibit 1:** The relative risk of dying from any cause for different levels of alcohol intake (reference level = 1.0)<br><br>
 
-![](alcohol-mortality-allcause.jpg)
+![](exhibit1.png)
 
 
 ### <span style="font-size: 0.9em;">**Exhibit 2:** Cardiovascular disease mortality hazard ratios by drinking frequency and quantity<br><br>
 
-![](alcohol-mortality-cardiovascular.jpg)
+![](exhibit2.png)
 
 Note: A greater hazard ratio means dying from cardiovascular disease is relatively more likely.<br><br>
 
